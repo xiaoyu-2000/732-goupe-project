@@ -13,6 +13,10 @@ npm install leaflet react-leaflet react-icons
 | `leaflet`           | `npm install leaflet`               | Core mapping engine                 |
 | `react-leaflet`     | `npm install react-leaflet`         | React wrapper for Leaflet           |
 | `react-icons`       | `npm install react-icons`           | Icon library (used in sidebar UI)   |
+| `react-router-dom npm` |`install react-router-dom` |            |
+|   `leaflet`      |`npm install react-leaflet leaflet`|    |
+|   `polyline`     |`npm install @mapbox/polyline`|     |
+
 ```
 
 Also, make sure to **import Leaflet CSS** in your main CSS file (e.g., `App.css` or `index.css`):

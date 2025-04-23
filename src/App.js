@@ -1,14 +1,23 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Sidebar from "./Sidebar";
 import GpsMap from "./GpsMap";
-import Sidebar from "./Sidebar"; // Import Sidebar
-import "./App.css";
+import NewMarkerPage from "./NewMarkerPage";
+import RoutePlanner from "./RoutePlanner";
+
 
 function App() {
   return (
-    <div className="App">
-      <Sidebar />
-      <GpsMap />
-    </div>
+    <Router>
+      <div className="App">
+        <Sidebar />
+        <Routes>
+          <Route path="/" element={<GpsMap />} />
+          <Route path="/new" element={<NewMarkerPage />} />
+          <Route path="/route" element={<RoutePlanner />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
